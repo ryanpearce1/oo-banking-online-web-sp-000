@@ -21,7 +21,7 @@ class Transfer
       
     elsif
       valid? = false 
-        
+        puts "Transaction rejected. Please check your account balance."
     end
     
       
