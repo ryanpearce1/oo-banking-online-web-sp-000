@@ -19,14 +19,14 @@ class Transfer
       sender.balance -= amount
       self.status = "complete"
       
-    else
-      @status = "rejected"
+    elsif
+      valid? && sender.balance < amount
       puts "Transaction rejected. Please check your account balance."
-      
-    else 
-      
     end
+    
+      
   end
+  
     
 end
   
